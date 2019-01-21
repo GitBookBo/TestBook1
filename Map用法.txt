@@ -1,0 +1,23 @@
+		JSONArray jsonArray = new JSONArray();
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("device", "BOOM！sha_ka_la_ka");
+		map.put("uptime_percent", "必赢");
+		jsonArray.add(0, map);
+		System.out.println("Map键值对====="+jsonArray.toString());
+		
+		User user = new  User();
+		JSONObject json = new JSONObject();
+		json.put("flag", 123546);
+		
+		/*
+		Map<String, Object> maps = new HashMap<String, Object>();
+		maps.put("json对象", json);
+		maps.put("实体类对象", user);
+		maps.put("uptime_percent", "必赢");
+		jsonArray.add(1, maps);
+		System.out.println("Map键、对象====="+jsonArray.toString());
+		*/
+		
+		List<Map<String, String>> list = new ArrayList<Map<String,String>>();
+		list.add(map);
+		System.out.println(list);
